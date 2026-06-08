@@ -45,7 +45,7 @@ stage('Push to DockerHub') {
         stage('Deploy') {
             steps {
                 echo 'This is deploying the code'
-                sh 'docker compose down && cdocker compose up -d'
+                sh 'docker compose down && docker compose up -d'
             }
         }
     }
